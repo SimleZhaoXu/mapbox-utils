@@ -1,0 +1,141 @@
+[
+  {
+    "propName": "speed",
+    "instanceType": "controller",
+    "type": "number",
+    "min": 1,
+    "max": 50,
+    "step": 1
+  },
+  {
+    "propName": "loop",
+    "instanceType": "controller",
+    "type": "boolean"
+  },
+  {
+    "propName": "pathLayer",
+    "instanceType": "folder",
+    "controllers": [
+      {
+        "propName": "show",
+        "instanceType": "controller",
+        "type": "boolean"
+      },
+      {
+        "propName": "isFull",
+        "instanceType": "controller",
+        "type": "boolean"
+      },
+      {
+        "propName": "style",
+        "instanceType": "folder",
+        "controllers": [
+          {
+            "propName": "line-color",
+            "instanceType": "controller",
+            "type": "color"
+          },
+          {
+            "propName": "line-width",
+            "instanceType": "controller",
+            "type": "number",
+            "min": 0,
+            "max": 50,
+            "step": 1
+          },
+          {
+            "propName": "line-opacity",
+            "instanceType": "controller",
+            "type": "number",
+            "min": 0,
+            "max": 1,
+            "step": 0.01
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "propName": "currentPathLayer",
+    "instanceType": "folder",
+    "controllers": [
+      {
+        "propName": "show",
+        "instanceType": "controller",
+        "type": "boolean"
+      },
+      {
+        "propName": "style",
+        "instanceType": "folder",
+        "controllers": [
+          {
+            "propName": "line-color",
+            "instanceType": "controller",
+            "type": "color"
+          },
+          {
+            "propName": "line-width",
+            "instanceType": "controller",
+            "type": "number",
+            "min": 0,
+            "max": 50,
+            "step": 1
+          },
+          {
+            "propName": "line-opacity",
+            "instanceType": "controller",
+            "type": "number",
+            "min": 0,
+            "max": 1,
+            "step": 0.01
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "propName": "carLayer",
+    "instanceType": "folder",
+    "controllers": [
+      {
+        "propName": "show",
+        "instanceType": "controller",
+        "type": "boolean"
+      },
+      {
+        "propName": "type",
+        "instanceType": "controller",
+        "type": "select",
+        "items": ["symbol"]
+      },
+      {
+        "propName": "style",
+        "instanceType": "folder",
+        "controllers": [
+          {
+            "instanceType": "controller",
+            "propName": "icon-image",
+            "type": "select",
+            "items": ["icon-plane"]
+          },
+          {
+            "propName": "icon-size",
+            "instanceType": "controller",
+            "type": "number",
+            "min": 0,
+            "max": 20,
+            "step": 1
+          },
+          {
+            "propName": "icon-rotate",
+            "instanceType": "controller",
+            "type": "number",
+            "min": -180,
+            "max": 180,
+            "step": 1
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,90 @@
+[
+  {
+    "name": "启用自动适应视口",
+    "propName": "enableFitBounds",
+    "instanceType": "controller",
+    "type": "select",
+    "items": { "禁用": "0", "启用": "1", "开启配置": "2" },
+    "enableValue": "2",
+    "refFolder": "fitBoundsOptions"
+  },
+  {
+    "propName": "fitBoundsOptions",
+    "instanceType": "folder",
+    "controllers": [
+      {
+        "propName": "linear",
+        "instanceType": "controller",
+        "type": "boolean"
+      },
+      {
+        "propName": "maxZoom",
+        "instanceType": "controller",
+        "type": "number",
+        "min": 0,
+        "max": 24,
+        "step": 0.1
+      },
+      {
+        "name": "offset-x",
+        "instanceType": "controller",
+        "propName": "offset",
+        "isArray": true,
+        "type": "number",
+        "index": 0,
+        "min": -99,
+        "max": 99,
+        "step": 0.1
+      },
+      {
+        "name": "offset-y",
+        "instanceType": "controller",
+        "propName": "offset",
+        "isArray": true,
+        "index": 1,
+        "type": "number",
+        "min": -99,
+        "max": 99,
+        "step": 1
+      },
+      {
+        "propName": "padding",
+        "instanceType": "folder",
+        "controllers": [
+          {
+            "propName": "top",
+            "instanceType": "controller",
+            "type": "number",
+            "min": 0,
+            "max": 300,
+            "step": 1
+          },
+          {
+            "propName": "right",
+            "instanceType": "controller",
+            "type": "number",
+            "min": 0,
+            "max": 300,
+            "step": 1
+          },
+          {
+            "propName": "bottom",
+            "instanceType": "controller",
+            "type": "number",
+            "min": 0,
+            "max": 300,
+            "step": 1
+          },
+          {
+            "propName": "left",
+            "instanceType": "controller",
+            "type": "number",
+            "min": 0,
+            "max": 300,
+            "step": 1
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,354 @@
+{
+  "version": 8,
+  "name": "default",
+  "metadata": {"maputnik:renderer": "mbgljs"},
+  "zoom": 5,
+  "sources": {
+    "gd_area": {
+      "scheme": "tms",
+      "tiles": [
+        "http://10.255.144.87/gis/tms/gwc/service/tms/1.0.0/cestc%3Agd_area@EPSG%3A900913@pbf/{z}/{x}/{y}.pbf"
+      ],
+      "type": "vector"
+    },
+    "gd_community": {
+      "scheme": "tms",
+      "tiles": [
+        "http://10.255.144.87/gis/tms/gwc/service/tms/1.0.0/cestc%3Agd_community@EPSG%3A900913@pbf/{z}/{x}/{y}.pbf"
+      ],
+      "type": "vector"
+    },
+    "gc_houseNumber": {
+      "scheme": "tms",
+      "tiles": [
+        "http://10.255.144.87/gis/tms/gwc/service/tms/1.0.0/cestc%3Agc_houseNumber@EPSG%3A900913@pbf/{z}/{x}/{y}.pbf"
+      ],
+      "type": "vector"
+    },
+    "gc_poi": {
+      "scheme": "tms",
+      "tiles": [
+        "http://10.255.144.87/gis/tms/gwc/service/tms/1.0.0/cestc%3Agc_poi@EPSG%3A900913@pbf/{z}/{x}/{y}.pbf"
+      ],
+      "type": "vector"
+    },
+    "gd_street": {
+      "scheme": "tms",
+      "tiles": [
+        "http://10.255.144.87/gis/tms/gwc/service/tms/1.0.0/cestc%3Agd_street@EPSG%3A900913@pbf/{z}/{x}/{y}.pbf"
+      ],
+      "type": "vector"
+    },
+    "bd_roadLine": {
+      "scheme": "tms",
+      "tiles": [
+        "http://10.255.144.87/gis/tms/gwc/service/tms/1.0.0/cestc%3Abd_roadLine@EPSG%3A900913@pbf/{z}/{x}/{y}.pbf"
+      ],
+      "type": "vector"
+    },
+    "bd_roadSurface": {
+      "scheme": "tms",
+      "tiles": [
+        "http://10.255.144.87/gis/tms/gwc/service/tms/1.0.0/cestc%3Abd_roadSurface@EPSG%3A900913@pbf/{z}/{x}/{y}.pbf"
+      ],
+      "type": "vector"
+    },
+    "bd_building": {
+      "scheme": "tms",
+      "tiles": [
+        "http://10.255.144.87/gis/tms/gwc/service/tms/1.0.0/cestc%3Abd_building@EPSG%3A900913@pbf/{z}/{x}/{y}.pbf"
+      ],
+      "type": "vector"
+    },
+    "bd_greenSpaces": {
+      "scheme": "tms",
+      "tiles": [
+        "http://10.255.144.87/gis/tms/gwc/service/tms/1.0.0/cestc%3Abd_greenSpaces@EPSG%3A900913@pbf/{z}/{x}/{y}.pbf"
+      ],
+      "type": "vector"
+    },
+    "bd_waterSystem": {
+      "scheme": "tms",
+      "tiles": [
+        "http://10.255.144.87/gis/tms/gwc/service/tms/1.0.0/cestc%3Abd_waterSystem@EPSG%3A900913@pbf/{z}/{x}/{y}.pbf"
+      ],
+      "type": "vector"
+    }
+  },
+  "sprite": "http://10.255.144.87/gis/cstyle/sprites/maki",
+  "glyphs": "http://10.255.144.87/gis/cstyle/fonts/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "basemap",
+      "type": "background",
+      "minzoom": 6,
+      "maxzoom": 24,
+      "filter": ["none"],
+      "layout": {"visibility": "visible"},
+      "paint": {"background-color": "rgba(31, 34, 39, 1)"}
+    },
+    {
+      "id": "gd_area",
+      "type": "fill",
+      "source": "gd_area",
+      "source-layer": "gd_area",
+      "minzoom": 0,
+      "layout": {"visibility": "visible"},
+      "paint": {
+        "fill-color": "rgba(29, 34, 38, 1)",
+        "fill-outline-color": "rgba(107, 134, 134, 1)"
+      }
+    },
+    {
+      "id": "gd_community",
+      "type": "fill",
+      "source": "gd_community",
+      "source-layer": "gd_community",
+      "minzoom": 0,
+      "maxzoom": 0,
+      "layout": {"visibility": "visible"},
+      "paint": {"fill-color": "rgba(4, 4, 4, 1)"}
+    },
+    {
+      "id": "gd_street",
+      "type": "fill",
+      "source": "gd_street",
+      "source-layer": "gd_street",
+      "minzoom": 0,
+      "layout": {"visibility": "visible"},
+      "paint": {"fill-color": "rgba(28, 34, 38, 1)"}
+    },
+    {
+      "id": "gd_street_DSJD-copy",
+      "type": "fill",
+      "source": "gd_street",
+      "source-layer": "gd_street",
+      "minzoom": 0,
+      "filter": ["all", ["==", "STREETNAME", "江津区珞璜工业园"]],
+      "layout": {"visibility": "visible"},
+      "paint": {
+        "fill-color": "rgba(54, 51, 51, 0.63)",
+        "fill-outline-color": "rgba(255, 155, 140, 0.59)"
+      }
+    },
+    {
+      "id": "gd_street_DSJD",
+      "type": "fill",
+      "source": "gd_street",
+      "source-layer": "gd_street",
+      "minzoom": 0,
+      "filter": ["all", ["==", "STREETNAME", "鼎山街道"]],
+      "layout": {"visibility": "visible"},
+      "paint": {
+        "fill-color": "rgba(23, 26, 31, 1)",
+        "fill-outline-color": "rgba(31, 45, 71, 1)"
+      }
+    },
+    {
+      "id": "bd_building-height-copy",
+      "type": "fill-extrusion",
+      "source": "bd_building",
+      "source-layer": "bd_building",
+      "minzoom": 14,
+      "maxzoom": 24,
+      "filter": ["all", ["==", "NAME", "zf"]],
+      "layout": {"visibility": "visible"},
+      "paint": {
+        "fill-extrusion-color": "rgba(46, 46, 50, 1)",
+        "fill-extrusion-height": 20,
+        "fill-extrusion-translate-anchor": "map"
+      }
+    },
+    {
+      "id": "bd_building-height",
+      "type": "fill-extrusion",
+      "source": "bd_building",
+      "source-layer": "bd_building",
+      "minzoom": 8,
+      "maxzoom": 22,
+      "filter": ["all", ["==", "name", ""]],
+      "layout": {"visibility": "visible"},
+      "paint": {
+        "fill-extrusion-color": "rgba(90, 90, 90, 1)",
+        "fill-extrusion-height": 70
+      }
+    },
+    {
+      "id": "bd_building",
+      "type": "fill",
+      "source": "bd_building",
+      "source-layer": "bd_building",
+      "minzoom": 0,
+      "maxzoom": 14,
+      "layout": {"visibility": "visible"},
+      "paint": {"fill-color": "rgba(65, 65, 73, 1)"}
+    },
+    {
+      "id": "gc_houseNumber",
+      "type": "symbol",
+      "source": "gc_houseNumber",
+      "source-layer": "gc_houseNumber",
+      "minzoom": 0,
+      "filter": ["all"],
+      "layout": {"visibility": "visible"},
+      "paint": {
+        "text-halo-color": "rgba(158,173, 82, 51)",
+        "text-halo-blur": 0.5,
+        "text-color": "rgba(66,59, 207, 87)",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "bd_greenSpaces",
+      "type": "fill",
+      "source": "bd_greenSpaces",
+      "source-layer": "bd_greenSpaces",
+      "minzoom": 12,
+      "layout": {"visibility": "visible"},
+      "paint": {
+        "fill-color": "rgba(245, 208, 58, 1)",
+        "fill-translate": [0, 0],
+        "fill-antialias": true
+      }
+    },
+    {
+      "id": "bd_roadSurface",
+      "type": "fill",
+      "source": "bd_roadSurface",
+      "source-layer": "bd_roadSurface",
+      "minzoom": 14,
+      "maxzoom": 24,
+      "layout": {"visibility": "visible"},
+      "paint": {
+        "fill-color": "rgba(24, 28, 31, 1)",
+        "fill-translate-anchor": "map"
+      }
+    },
+    {
+      "id": "bd_waterSystem",
+      "type": "fill",
+      "source": "bd_waterSystem",
+      "source-layer": "bd_waterSystem",
+      "minzoom": 0,
+      "layout": {"visibility": "visible"},
+      "paint": {
+        "fill-color": "rgba(41, 44, 49, 1)",
+        "fill-outline-color": "rgba(110, 110, 110, 1)"
+      }
+    },
+    {
+      "id": "bd_roadLine",
+      "type": "line",
+      "source": "bd_roadLine",
+      "source-layer": "bd_roadLine",
+      "minzoom": 14,
+      "layout": {"visibility": "visible"},
+      "paint": {
+        "line-width": {"stops": [[6, 1], [10, 2]]},
+        "line-blur": 0,
+        "line-color": "rgba(140, 119, 72, 1)"
+      }
+    },
+    {
+      "id": "bd_roadLine_NBDD",
+      "type": "line",
+      "source": "bd_roadLine",
+      "source-layer": "bd_roadLine",
+      "minzoom": 14,
+      "filter": ["all", ["==", "NAME", "南北大道"]],
+      "paint": {
+        "line-width": {"stops": [[4, 2], [8, 2]]},
+        "line-blur": 0,
+        "line-color": "rgba(35, 220, 255, 1)",
+        "line-translate-anchor": "map",
+        "line-offset": 4,
+        "line-gap-width": 2
+      }
+    },
+    {
+      "id": "bd_roadLine_BJDDZD",
+      "type": "line",
+      "source": "bd_roadLine",
+      "source-layer": "bd_roadLine",
+      "minzoom": 14,
+      "filter": ["all", ["==", "NAME", "滨江大道中段"]],
+      "paint": {
+        "line-width": {"stops": [[4, 2], [8, 2]]},
+        "line-blur": 0,
+        "line-color": "rgba(35, 220, 255, 1)",
+        "line-translate-anchor": "map",
+        "line-offset": 4,
+        "line-gap-width": 2
+      }
+    },
+    {
+      "id": "bd_roadLine_DSDD",
+      "type": "line",
+      "source": "bd_roadLine",
+      "source-layer": "bd_roadLine",
+      "minzoom": 14,
+      "filter": ["all", ["==", "NAME", "鼎山大道"]],
+      "paint": {
+        "line-width": {"stops": [[4, 2], [8, 2]]},
+        "line-blur": 0,
+        "line-color": "rgba(255, 222, 69, 1)",
+        "line-translate-anchor": "map",
+        "line-offset": 4,
+        "line-gap-width": 2
+      }
+    },
+    {
+      "id": "bd_roadLine_APSSD",
+      "type": "line",
+      "source": "bd_roadLine",
+      "source-layer": "bd_roadLine",
+      "minzoom": 14,
+      "filter": ["all", ["==", "NAME", "艾坪山隧道"]],
+      "paint": {
+        "line-width": {"stops": [[4, 2], [8, 2]]},
+        "line-blur": 0,
+        "line-color": "rgba(255, 222, 69, 1)",
+        "line-translate-anchor": "map",
+        "line-offset": 4,
+        "line-gap-width": 2
+      }
+    },
+    {
+      "id": "bd_roadLine_BJL",
+      "type": "line",
+      "source": "bd_roadLine",
+      "source-layer": "bd_roadLine",
+      "minzoom": 14,
+      "filter": ["all", ["==", "NAME", "滨江路"]],
+      "paint": {
+        "line-width": {"stops": [[4, 2], [8, 2]]},
+        "line-blur": 0,
+        "line-color": "rgba(35, 220, 255, 1)",
+        "line-translate-anchor": "map",
+        "line-offset": 4,
+        "line-gap-width": 2
+      }
+    },
+    {
+      "id": "gc_poi",
+      "type": "symbol",
+      "source": "gc_poi",
+      "source-layer": "gc_poi",
+      "minzoom": 14,
+      "maxzoom": 24,
+      "layout": {
+        "visibility": "visible",
+        "icon-keep-upright": false,
+        "text-field": "{NAME}",
+        "text-size": 16
+      },
+      "paint": {
+        "text-halo-color": "rgba(5, 28, 48, 1)",
+        "text-halo-blur": 0,
+        "text-color": "rgba(203, 249, 255, 1)",
+        "text-halo-width": 6
+      }
+    }
+  ],
+  "id": "suymuuf0q"
+}

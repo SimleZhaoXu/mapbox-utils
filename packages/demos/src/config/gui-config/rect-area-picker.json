@@ -1,0 +1,226 @@
+[
+  {
+    "propName": "style",
+    "instanceType": "folder",
+    "controllers": [
+      {
+        "propName": "vertex-radius",
+        "instanceType": "controller",
+        "type": "number",
+        "min": 0,
+        "max": 50,
+        "step": 1
+      },
+      {
+        "propName": "vertex-color",
+        "instanceType": "controller",
+        "type": "color"
+      },
+      {
+        "propName": "vertex-opacity",
+        "instanceType": "controller",
+        "type": "number",
+        "min": 0,
+        "max": 1,
+        "step": 0.01
+      },
+      {
+        "propName": "vertex-stroke-width",
+        "instanceType": "controller",
+        "type": "number",
+        "min": 0,
+        "max": 30,
+        "step": 1
+      },
+      {
+        "propName": "vertex-stroke-color",
+        "instanceType": "controller",
+        "type": "color"
+      },
+      {
+        "propName": "vertex-stroke-opacity",
+        "instanceType": "controller",
+        "type": "number",
+        "min": 0,
+        "max": 1,
+        "step": 0.01
+      },
+      {
+        "propName": "stroke-color",
+        "instanceType": "controller",
+        "type": "color"
+      },
+      {
+        "propName": "stroke-width",
+        "instanceType": "controller",
+        "type": "number",
+        "min": 0,
+        "max": 50,
+        "step": 1
+      },
+      {
+        "propName": "stroke-opacity",
+        "instanceType": "controller",
+        "type": "number",
+        "min": 0,
+        "max": 1,
+        "step": 0.01
+      },
+      {
+        "propName": "stroke-blur",
+        "instanceType": "controller",
+        "type": "number",
+        "min": 0,
+        "max": 99,
+        "step": 1
+      },
+      {
+        "name": "stroke-dasharray[0]",
+        "instanceType": "controller",
+        "propName": "stroke-dasharray",
+        "type": "number",
+        "isArray": true,
+        "index": 0,
+        "min": 0,
+        "max": 50,
+        "step": 1
+      },
+      {
+        "name": "stroke-dasharray[1]",
+        "instanceType": "controller",
+        "propName": "stroke-dasharray",
+        "type": "number",
+        "isArray": true,
+        "index": 1,
+        "min": 0,
+        "max": 50,
+        "step": 1
+      },
+      {
+        "propName": "fill-color",
+        "instanceType": "controller",
+        "type": "color"
+      },
+      {
+        "propName": "fill-opacity",
+        "instanceType": "controller",
+        "type": "number",
+        "min": 0,
+        "max": 1,
+        "step": 0.01
+      }
+    ]
+  },
+  {
+    "propName": "finishedStyle",
+    "instanceType": "folder",
+    "controllers": [
+      {
+        "propName": "vertex-radius",
+        "instanceType": "controller",
+        "type": "number",
+        "min": 0,
+        "max": 50,
+        "step": 1
+      },
+      {
+        "propName": "vertex-color",
+        "instanceType": "controller",
+        "type": "color"
+      },
+      {
+        "propName": "vertex-opacity",
+        "instanceType": "controller",
+        "type": "number",
+        "min": 0,
+        "max": 1,
+        "step": 0.01
+      },
+      {
+        "propName": "vertex-stroke-width",
+        "instanceType": "controller",
+        "type": "number",
+        "min": 0,
+        "max": 30,
+        "step": 1
+      },
+      {
+        "propName": "vertex-stroke-color",
+        "instanceType": "controller",
+        "type": "color"
+      },
+      {
+        "propName": "vertex-stroke-opacity",
+        "instanceType": "controller",
+        "type": "number",
+        "min": 0,
+        "max": 1,
+        "step": 0.01
+      },
+      {
+        "propName": "stroke-color",
+        "instanceType": "controller",
+        "type": "color"
+      },
+      {
+        "propName": "stroke-width",
+        "instanceType": "controller",
+        "type": "number",
+        "min": 0,
+        "max": 50,
+        "step": 1
+      },
+      {
+        "propName": "stroke-opacity",
+        "instanceType": "controller",
+        "type": "number",
+        "min": 0,
+        "max": 1,
+        "step": 0.01
+      },
+      {
+        "propName": "stroke-blur",
+        "instanceType": "controller",
+        "type": "number",
+        "min": 0,
+        "max": 99,
+        "step": 1
+      },
+      {
+        "name": "stroke-dasharray[0]",
+        "instanceType": "controller",
+        "propName": "stroke-dasharray",
+        "type": "number",
+        "isArray": true,
+        "index": 0,
+        "min": 0,
+        "max": 50,
+        "step": 1
+      },
+      {
+        "name": "stroke-dasharray[1]",
+        "instanceType": "controller",
+        "propName": "stroke-dasharray",
+        "type": "number",
+        "isArray": true,
+        "index": 1,
+        "min": 0,
+        "max": 50,
+        "step": 1
+      },
+      {
+        "propName": "fill-color",
+        "instanceType": "controller",
+        "type": "color"
+      },
+      {
+        "propName": "fill-opacity",
+        "instanceType": "controller",
+        "type": "number",
+        "min": 0,
+        "max": 1,
+        "step": 0.01
+      }
+    ]
+  }
+]
