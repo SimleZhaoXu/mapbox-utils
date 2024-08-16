@@ -1,0 +1,1 @@
+import{_ as s,h as n,i as a,N as l}from"./chunks/framework.73679867.js";const E=JSON.parse('{"title":"Layers","description":"","frontmatter":{},"headers":[],"relativePath":"base/style/layers.md"}'),o={name:"base/style/layers.md"},p=l("",27),t=[p];function e(c,D,r,y,F,B){return n(),a("div",null,t)}const u=s(o,[["render",e]]);export{E as __pageData,u as default};

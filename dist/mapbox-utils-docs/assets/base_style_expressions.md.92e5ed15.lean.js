@@ -1,0 +1,1 @@
+import{_ as s,h as n,i as a,N as l}from"./chunks/framework.73679867.js";const u=JSON.parse('{"title":"Expressions","description":"","frontmatter":{},"headers":[],"relativePath":"base/style/expressions.md"}'),o={name:"base/style/expressions.md"},p=l("",63),e=[p];function t(c,D,r,y,F,i){return n(),a("div",null,e)}const E=s(o,[["render",t]]);export{u as __pageData,E as default};

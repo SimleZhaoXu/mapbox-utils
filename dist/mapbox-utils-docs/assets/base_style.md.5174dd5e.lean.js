@@ -1,0 +1,1 @@
+import{_ as s,h as a,i as n,N as o}from"./chunks/framework.73679867.js";const h=JSON.parse('{"title":"Mapbox Style 规范","description":"","frontmatter":{},"headers":[],"relativePath":"base/style.md"}'),e={name:"base/style.md"},l=o("",46),p=[l];function c(t,r,i,d,D,y){return a(),n("div",null,p)}const u=s(e,[["render",c]]);export{h as __pageData,u as default};
