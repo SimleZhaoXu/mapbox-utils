@@ -6,7 +6,7 @@
 
 ```js{2,4}
 // 1. 导入
-import { CarTrack } from 'mapbox-utils'
+import { CarTrack } from 'mapbox-postting'
 // 2. 创建CarTrack实例
 const track = new CarTrack(options)
 // 3. 添加到地图
@@ -188,7 +188,7 @@ track.start()
 <script setup>
 import { onBeforeUnmount } from 'vue'
 import MapView from '/components/map-view.vue'
-import { CarTrack } from 'mapbox-utils'
+import { CarTrack } from 'mapbox-postting'
 import pathData from '/data/trackData'
 import plane from '/assets/map-icon/icon-plane.png'
 let map

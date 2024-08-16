@@ -18,6 +18,19 @@ defineProps({
 <style lang="scss" scoped>
 .custom-marker {
   --color: #ff22bb;
+  &.marker-1 {
+    --color: #b0a4e3;
+  }
+  &.marker-2 {
+    --color: #9ed900;
+  }
+  &.marker-3 {
+    --color: #ff8c31;
+  }
+  &.marker-4 {
+    --color: #ff4c00;
+  }
+
   font-family: 'Poppins', sans-serif;
   padding: 0 20px;
   height: 35px;
@@ -63,18 +76,6 @@ defineProps({
     position: absolute;
     background: #0e1538;
     transition: all 0.5s;
-  }
-  &.marker-1 {
-    --color: #b0a4e3;
-  }
-  &.marker-2 {
-    --color: #9ed900;
-  }
-  &.marker-3 {
-    --color: #ff8c31;
-  }
-  &.marker-4 {
-    --color: #ff4c00;
   }
 }
 

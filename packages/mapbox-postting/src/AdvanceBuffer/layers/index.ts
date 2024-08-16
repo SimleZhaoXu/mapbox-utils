@@ -8,7 +8,7 @@ export type LayerType =
 const layers: Array<LayerType> = [
   // 缓冲区填充
   {
-    id: 'mapbox-postting-advance-buffer-fill',
+    id: 'mapbox-utils-advance-buffer-fill',
     type: 'fill',
     filter: ['all', ['==', '$type', 'Polygon'], ['==', 'origin', 'buffer']],
     paint: {
@@ -18,7 +18,7 @@ const layers: Array<LayerType> = [
   },
   // 缓冲区描边
   {
-    id: 'mapbox-postting-advance-buffer-border',
+    id: 'mapbox-utils-advance-buffer-border',
     type: 'line',
     filter: ['all', ['==', '$type', 'LineString'], ['==', 'origin', 'buffer']],
     paint: {
@@ -29,7 +29,7 @@ const layers: Array<LayerType> = [
   },
   // 多边形填充
   {
-    id: 'mapbox-postting-advance-buffer-polygon-fill-inactive',
+    id: 'mapbox-utils-advance-buffer-polygon-fill-inactive',
     type: 'fill',
     filter: [
       'all',
@@ -44,7 +44,7 @@ const layers: Array<LayerType> = [
   },
   // 多边形描边
   {
-    id: 'mapbox-postting-advance-buffer-polygon-border-inactive',
+    id: 'mapbox-utils-advance-buffer-polygon-border-inactive',
     type: 'line',
     filter: [
       'all',
@@ -60,7 +60,7 @@ const layers: Array<LayerType> = [
   },
   // 线
   {
-    id: 'mapbox-postting-advance-buffer-line-inactive',
+    id: 'mapbox-utils-advance-buffer-line-inactive',
     type: 'line',
     filter: [
       'all',
@@ -76,7 +76,7 @@ const layers: Array<LayerType> = [
   },
   // 线或多边形的顶点，可根据origin:line/polygon进行区分
   {
-    id: 'mapbox-postting-advance-buffer-vertex-inactive',
+    id: 'mapbox-utils-advance-buffer-vertex-inactive',
     type: 'circle',
     filter: ['all', ['==', 'active', 'false'], ['==', '$type', 'Point'], ['==', 'type', 'vertex']],
     paint: {
@@ -88,7 +88,7 @@ const layers: Array<LayerType> = [
   },
   // 点(圆心)
   {
-    id: 'mapbox-postting-advance-buffer-point',
+    id: 'mapbox-utils-advance-buffer-point',
     type: 'circle',
     filter: ['all', ['==', 'origin', 'point'], ['==', '$type', 'Point']],
     paint: {
@@ -100,7 +100,7 @@ const layers: Array<LayerType> = [
   },
   // 多边形填充（绘制时）
   {
-    id: 'mapbox-postting-advance-buffer-polygon-fill-active',
+    id: 'mapbox-utils-advance-buffer-polygon-fill-active',
     type: 'fill',
     filter: ['all', ['==', 'active', 'true'], ['==', '$type', 'Polygon']],
     paint: {
@@ -110,7 +110,7 @@ const layers: Array<LayerType> = [
   },
   // 多边形描边（绘制时）
   {
-    id: 'mapbox-postting-advance-buffer-polygon-border-active',
+    id: 'mapbox-utils-advance-buffer-polygon-border-active',
     type: 'line',
     filter: [
       'all',
@@ -126,7 +126,7 @@ const layers: Array<LayerType> = [
   },
   // 线（绘制时）
   {
-    id: 'mapbox-postting-advance-buffer-line-active',
+    id: 'mapbox-utils-advance-buffer-line-active',
     type: 'line',
     filter: [
       'all',
@@ -142,7 +142,7 @@ const layers: Array<LayerType> = [
   },
   // 线或多边形的顶点（绘制时），可根据origin:line/polygon进行区分
   {
-    id: 'mapbox-postting-advance-buffer-vertex-active',
+    id: 'mapbox-utils-advance-buffer-vertex-active',
     type: 'circle',
     filter: ['all', ['==', 'active', 'true'], ['==', '$type', 'Point'], ['==', 'type', 'vertex']],
     paint: {

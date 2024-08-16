@@ -6,7 +6,7 @@
 
 ```js{2,4}
 // 1. 导入
-import { LinePicker } from 'mapbox-utils'
+import { LinePicker } from 'mapbox-postting'
 // 2. 创建LinePicker实例
 const linePicker = new LinePicker(options)
 // 3. 添加到地图
@@ -163,7 +163,7 @@ linePicker.addTo(map) // map为MapBox地图实例
 <script setup>
 import { onBeforeUnmount, createApp } from 'vue'
 import MapView from '/components/map-view.vue'
-import { LinePicker } from 'mapbox-utils'
+import { LinePicker } from 'mapbox-postting'
 import { ElMessage } from 'element-plus'
 import 'element-plus/dist/index.css'
 let map

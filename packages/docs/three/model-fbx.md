@@ -46,7 +46,7 @@ onMounted(() => {
       objects: [],
       onAdd() {
         window.tb.loadObj({
-          obj: window.origin + '/mapbox-utils-docs/models/triceratops.fbx',
+          obj: window.origin + '/mapbox-postting-docs/models/triceratops.fbx',
           type: 'fbx',
           scale: 0.5,
           units: 'meters',

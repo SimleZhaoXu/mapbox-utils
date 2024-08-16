@@ -6,7 +6,7 @@
 
 ```js{2,4}
 // 1. 导入
-import { CircleAreaPicker } from 'mapbox-utils'
+import { CircleAreaPicker } from 'mapbox-postting'
 // 2. 创建CircleAreaPicker实例
 const circleAreaPicker = new CircleAreaPicker(options)
 // 3. 添加到地图
@@ -157,7 +157,7 @@ circleAreaPicker.addTo(map) // map为MapBox地图实例
 <script setup>
 import { onBeforeUnmount, createApp } from 'vue'
 import MapView from '/components/map-view.vue'
-import { CircleAreaPicker } from 'mapbox-utils'
+import { CircleAreaPicker } from 'mapbox-postting'
 import { ElMessage } from 'element-plus'
 import 'element-plus/dist/index.css'
 let map

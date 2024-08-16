@@ -49,7 +49,7 @@ export default class AdvanceBuffer extends mapboxgl.Evented {
   constructor(options?: Options) {
     super()
     this._map = null
-    this._source = `mapbox-postting-advance-buffer-source-${nanoid(8)}`
+    this._source = `mapbox-utils-advance-buffer-source-${nanoid(8)}`
     this._currentModeType = MODE_TYPE.NONE
     this._currentMode = null
     this._radius = options?.radius && options.radius > 0 ? options.radius : 1
@@ -88,7 +88,7 @@ export default class AdvanceBuffer extends mapboxgl.Evented {
     if (this._map) {
       this._handleEventListener('off')
       this._removeSourceAndLayer()
-      this._map.getContainer().classList.remove('mapbox-postting-advance-buffer-cursor')
+      this._map.getContainer().classList.remove('mapbox-utils-advance-buffer-cursor')
     }
     this._currentModeType = MODE_TYPE.NONE
     this._currentMode = null
@@ -102,10 +102,10 @@ export default class AdvanceBuffer extends mapboxgl.Evented {
     this._currentModeType = mode
     if (mode === MODE_TYPE.NONE) {
       this._currentMode = null
-      this._map?.getContainer().classList.remove('mapbox-postting-advance-buffer-cursor')
+      this._map?.getContainer().classList.remove('mapbox-utils-advance-buffer-cursor')
     } else {
       this._currentMode = new MODE_MAP[mode]()
-      this._map?.getContainer().classList.add('mapbox-postting-advance-buffer-cursor')
+      this._map?.getContainer().classList.add('mapbox-utils-advance-buffer-cursor')
       this._currentMode.on(
         'finished',
         (e: { data: { feature: FeatureType; renderFeatures: Array<FeatureType> } }) => {

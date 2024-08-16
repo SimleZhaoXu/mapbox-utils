@@ -5,7 +5,7 @@ export type LayerType =
   | Omit<mapboxgl.FillLayer, OmitProperty>
 const layers: Array<LayerType> = [
   {
-    id: 'mapbox-postting-area-measurer-fill-inactive',
+    id: 'mapbox-utils-area-measurer-fill-inactive',
     type: 'fill',
     filter: ['all', ['==', 'active', 'false'], ['==', '$type', 'Polygon']],
     paint: {
@@ -14,7 +14,7 @@ const layers: Array<LayerType> = [
     }
   },
   {
-    id: 'mapbox-postting-area-measurer-line-inactive',
+    id: 'mapbox-utils-area-measurer-line-inactive',
     type: 'line',
     filter: ['all', ['==', 'active', 'false'], ['==', '$type', 'LineString']],
     paint: {
@@ -24,7 +24,7 @@ const layers: Array<LayerType> = [
     }
   },
   {
-    id: 'mapbox-postting-area-measurer-vertex-inactive',
+    id: 'mapbox-utils-area-measurer-vertex-inactive',
     type: 'circle',
     filter: ['all', ['==', 'active', 'false'], ['==', '$type', 'Point']],
     paint: {
@@ -35,7 +35,7 @@ const layers: Array<LayerType> = [
     }
   },
   {
-    id: 'mapbox-postting-area-measurer-fill-active',
+    id: 'mapbox-utils-area-measurer-fill-active',
     type: 'fill',
     filter: ['all', ['==', 'active', 'true'], ['==', '$type', 'Polygon']],
     paint: {
@@ -44,7 +44,7 @@ const layers: Array<LayerType> = [
     }
   },
   {
-    id: 'mapbox-postting-area-measurer-line-active',
+    id: 'mapbox-utils-area-measurer-line-active',
     type: 'line',
     filter: ['all', ['==', 'active', 'true'], ['==', '$type', 'LineString']],
     paint: {
@@ -54,7 +54,7 @@ const layers: Array<LayerType> = [
     }
   },
   {
-    id: 'mapbox-postting-area-measurer-vertex-active',
+    id: 'mapbox-utils-area-measurer-vertex-active',
     type: 'circle',
     filter: ['all', ['==', 'active', 'true'], ['==', '$type', 'Point']],
     paint: {

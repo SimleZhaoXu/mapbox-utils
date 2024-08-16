@@ -38,7 +38,7 @@ export default class DrawUtil extends mapboxgl.Evented {
   constructor(options?: Options) {
     super()
     this._map = null
-    this._source = `mapbox-postting-draw-util-source-${nanoid(8)}`
+    this._source = `mapbox-utils-draw-util-source-${nanoid(8)}`
     this._currentModeType = MODE_TYPE.NONE
     this._currentMode = null
     this._cacheMap = new Map()
@@ -74,7 +74,7 @@ export default class DrawUtil extends mapboxgl.Evented {
     if (this._map) {
       this._handleEventListener('off')
       this._removeSourceAndLayer()
-      this._map.getContainer().classList.remove('mapbox-postting-draw-util-cursor')
+      this._map.getContainer().classList.remove('mapbox-utils-draw-util-cursor')
     }
     this._currentModeType = MODE_TYPE.NONE
     this._currentMode = null
@@ -88,10 +88,10 @@ export default class DrawUtil extends mapboxgl.Evented {
     this._currentModeType = mode
     if (mode === MODE_TYPE.NONE) {
       this._currentMode = null
-      this._map?.getContainer().classList.remove('mapbox-postting-draw-util-cursor')
+      this._map?.getContainer().classList.remove('mapbox-utils-draw-util-cursor')
     } else {
       this._currentMode = new MODE_MAP[mode]()
-      this._map?.getContainer().classList.add('mapbox-postting-draw-util-cursor')
+      this._map?.getContainer().classList.add('mapbox-utils-draw-util-cursor')
       this._currentMode.on(
         'finished',
         (e: { data: { feature: FeatureType; renderFeatures: Array<FeatureType> } }) => {

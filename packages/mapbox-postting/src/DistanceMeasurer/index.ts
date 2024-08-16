@@ -36,7 +36,7 @@ type Options = {
 export default class DistanceMeasurer extends mapboxgl.Evented {
   private _map: mapboxgl.Map | null
   private _enabled: boolean
-  private _source = 'mapbox-postting-distance-measurer-source'
+  private _source = 'mapbox-utils-distance-measurer-source'
   private _cacheMap: Map<string, Cache>
   private _currentPath: Array<Path>
   private _next: number
@@ -70,7 +70,7 @@ export default class DistanceMeasurer extends mapboxgl.Evented {
     if (this._map) {
       this._handleEventListener('off')
       this._removeSourceAndLayer()
-      this._map.getContainer().classList.remove('mapbox-postting-distance-measurer-cursor')
+      this._map.getContainer().classList.remove('mapbox-utils-distance-measurer-cursor')
     }
     this._map = null
     this._enabled = false
@@ -80,7 +80,7 @@ export default class DistanceMeasurer extends mapboxgl.Evented {
   enable() {
     if (this._map) {
       this._enabled = true
-      this._map.getContainer().classList.add('mapbox-postting-distance-measurer-cursor')
+      this._map.getContainer().classList.add('mapbox-utils-distance-measurer-cursor')
     }
   }
 
@@ -92,7 +92,7 @@ export default class DistanceMeasurer extends mapboxgl.Evented {
     }
     this._enabled = false
     if (this._map) {
-      this._map.getContainer().classList.remove('mapbox-postting-distance-measurer-cursor')
+      this._map.getContainer().classList.remove('mapbox-utils-distance-measurer-cursor')
       this._render()
     }
   }
@@ -370,7 +370,7 @@ function getPathLength(data: Array<Coordinates>) {
 
 function createMarker(lngLat: [number, number], text: string) {
   const markerElem = document.createElement('div')
-  markerElem.classList.add('mapbox-postting-distance-measurer-marker')
+  markerElem.classList.add('mapbox-utils-distance-measurer-marker')
   const marker = new mapboxgl.Marker({
     element: markerElem,
     anchor: 'bottom',

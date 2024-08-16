@@ -6,7 +6,7 @@
 
 ```js{2,4}
 // 1. 导入
-import { PointPicker } from 'mapbox-utils'
+import { PointPicker } from 'mapbox-postting'
 // 2. 创建PointPicker实例
 const pointPicker = new PointPicker(options)
 // 3. 添加到地图
@@ -222,7 +222,7 @@ pointPicker.addTo(map) // map为MapBox地图实例
 <script setup>
 import { onBeforeUnmount, createApp } from 'vue'
 import MapView from '/components/map-view.vue'
-import { PointPicker } from 'mapbox-utils'
+import { PointPicker } from 'mapbox-postting'
 import { ElMessage } from 'element-plus'
 import 'element-plus/dist/index.css'
 let map

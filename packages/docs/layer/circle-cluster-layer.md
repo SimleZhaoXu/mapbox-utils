@@ -11,7 +11,7 @@
 
 ```js{2,4}
 // 1. 导入
-import { CircleClusterLayer } from 'mapbox-utils'
+import { CircleClusterLayer } from 'mapbox-postting'
 // 2. 创建CircleClusterLayer实例
 const pointLayer = new CircleClusterLayer(options)
 // 3. 添加到地图
@@ -361,7 +361,7 @@ pointLayer.addTo(map) // map为MapBox地图实例
 <script setup>
 import { onBeforeUnmount } from 'vue'
 import MapView from '/components/map-view.vue'
-import { CircleClusterLayer } from 'mapbox-utils'
+import { CircleClusterLayer } from 'mapbox-postting'
 import data from '/data/clusterData.json'
 import * as turf from '@turf/turf'
 let map

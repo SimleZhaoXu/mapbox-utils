@@ -6,9 +6,9 @@
 
 ```js{2,4}
 // 1. 导入
-import { MapComparer } from 'mapbox-utils'
+import { MapComparer } from 'mapbox-postting'
 // 导入css样式
-import 'mapbox-utils/dist/index.css'
+import 'mapbox-postting/dist/index.css'
 // 2. 创建MapComparer实例
 const mapComparer = new MapComparer(options)
 ```
@@ -68,12 +68,12 @@ const mapComparer = new MapComparer(options)
 
 <script setup>
 import 'mapbox-gl/dist/mapbox-gl.css'
-import 'mapbox-utils/dist/index.css'
+import 'mapbox-postting/dist/index.css'
 import firstMapStyle from '/data/map_sn.json'
 import secondMapStyle from '/data/map_sn.json'
 import { ref, onBeforeUnmount, onMounted } from 'vue'
 import data from '/data/heatmapData.json'
-import { MapComparer, CirclePointLayer, HeatmapLayer } from 'mapbox-utils'
+import { MapComparer, CirclePointLayer, HeatmapLayer } from 'mapbox-postting'
 const container = ref()
 let comparer
 
@@ -142,8 +142,8 @@ onBeforeUnmount(() => {
 ::: details 点击查看代码
 ```js
 import 'mapbox-gl/dist/mapbox-gl.css'
-import 'mapbox-utils/dist/index.css'
-import { MapComparer, CirclePointLayer, HeatmapLayer } from 'mapbox-utils'
+import 'mapbox-postting/dist/index.css'
+import { MapComparer, CirclePointLayer, HeatmapLayer } from 'mapbox-postting'
 import { ref, onBeforeUnmount, onMounted } from 'vue'
 const container = ref()
 let comparer

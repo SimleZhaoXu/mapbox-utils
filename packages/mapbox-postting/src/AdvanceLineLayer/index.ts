@@ -289,15 +289,15 @@ export default class AdvanceLineLayer extends mapboxgl.Evented {
   private _addCursor() {
     if (
       this._map &&
-      !this._map.getContainer().classList.contains('mapbox-postting-advance-line-layer')
+      !this._map.getContainer().classList.contains('mapbox-utils-advance-line-layer')
     ) {
-      this._map.getContainer().classList.add('mapbox-postting-advance-line-layer')
+      this._map.getContainer().classList.add('mapbox-utils-advance-line-layer')
     }
   }
 
   private _removeCursor() {
     if (this._map) {
-      this._map.getContainer().classList.remove('mapbox-postting-advance-line-layer')
+      this._map.getContainer().classList.remove('mapbox-utils-advance-line-layer')
     }
   }
 

@@ -10,7 +10,7 @@
 
 ```js{2,4}
 // 1. 导入
-import { AdvanceBuffer } from 'mapbox-utils'
+import { AdvanceBuffer } from 'mapbox-postting'
 // 2. 创建AdvanceBuffer实例
 const advanceBuffer = new AdvanceBuffer(options)
 // 3. 添加到地图
@@ -39,7 +39,7 @@ advanceBuffer.changeMode(AdvanceBuffer.MODE_TYPE.POINT)
 [
   // 缓冲区填充
   {
-    id: "mapbox-utils-advance-buffer-fill",
+    id: "mapbox-postting-advance-buffer-fill",
     type: "fill",
     filter: ["all", ["==", "$type", "Polygon"], ["==", "origin", "buffer"]],
     paint: {
@@ -49,7 +49,7 @@ advanceBuffer.changeMode(AdvanceBuffer.MODE_TYPE.POINT)
   },
   // 缓冲区描边
   {
-    id: "mapbox-utils-advance-buffer-border",
+    id: "mapbox-postting-advance-buffer-border",
     type: "line",
     filter: ["all", ["==", "$type", "LineString"], ["==", "origin", "buffer"]],
     paint: {
@@ -60,7 +60,7 @@ advanceBuffer.changeMode(AdvanceBuffer.MODE_TYPE.POINT)
   },
   // 多边形填充
   {
-    id: "mapbox-utils-advance-buffer-polygon-fill-inactive",
+    id: "mapbox-postting-advance-buffer-polygon-fill-inactive",
     type: "fill",
     filter: [
       "all",
@@ -75,7 +75,7 @@ advanceBuffer.changeMode(AdvanceBuffer.MODE_TYPE.POINT)
   },
   // 多边形描边
   {
-    id: "mapbox-utils-advance-buffer-polygon-border-inactive",
+    id: "mapbox-postting-advance-buffer-polygon-border-inactive",
     type: "line",
     filter: [
       "all",
@@ -91,7 +91,7 @@ advanceBuffer.changeMode(AdvanceBuffer.MODE_TYPE.POINT)
   },
   // 线
   {
-    id: "mapbox-utils-advance-buffer-line-inactive",
+    id: "mapbox-postting-advance-buffer-line-inactive",
     type: "line",
     filter: [
       "all",
@@ -107,7 +107,7 @@ advanceBuffer.changeMode(AdvanceBuffer.MODE_TYPE.POINT)
   },
   // 线或多边形的顶点，可根据origin:line/polygon进行区分
   {
-    id: "mapbox-utils-advance-buffer-vertex-inactive",
+    id: "mapbox-postting-advance-buffer-vertex-inactive",
     type: "circle",
     filter: [
       "all",
@@ -124,7 +124,7 @@ advanceBuffer.changeMode(AdvanceBuffer.MODE_TYPE.POINT)
   },
   // 点(圆心)
   {
-    id: "mapbox-utils-advance-buffer-point",
+    id: "mapbox-postting-advance-buffer-point",
     type: "circle",
     filter: ["all", ["==", "origin", "point"], ["==", "$type", "Point"]],
     paint: {
@@ -136,7 +136,7 @@ advanceBuffer.changeMode(AdvanceBuffer.MODE_TYPE.POINT)
   },
   // 多边形填充（绘制时）
   {
-    id: "mapbox-utils-advance-buffer-polygon-fill-active",
+    id: "mapbox-postting-advance-buffer-polygon-fill-active",
     type: "fill",
     filter: ["all", ["==", "active", "true"], ["==", "$type", "Polygon"]],
     paint: {
@@ -146,7 +146,7 @@ advanceBuffer.changeMode(AdvanceBuffer.MODE_TYPE.POINT)
   },
   // 多边形描边（绘制时）
   {
-    id: "mapbox-utils-advance-buffer-polygon-border-active",
+    id: "mapbox-postting-advance-buffer-polygon-border-active",
     type: "line",
     filter: [
       "all",
@@ -162,7 +162,7 @@ advanceBuffer.changeMode(AdvanceBuffer.MODE_TYPE.POINT)
   },
   // 线（绘制时）
   {
-    id: "mapbox-utils-advance-buffer-line-active",
+    id: "mapbox-postting-advance-buffer-line-active",
     type: "line",
     filter: [
       "all",
@@ -178,7 +178,7 @@ advanceBuffer.changeMode(AdvanceBuffer.MODE_TYPE.POINT)
   },
   // 线或多边形的顶点（绘制时），可根据origin:line/polygon进行区分
   {
-    id: "mapbox-utils-advance-buffer-vertex-active",
+    id: "mapbox-postting-advance-buffer-vertex-active",
     type: "circle",
     filter: [
       "all",
@@ -394,7 +394,7 @@ advanceBuffer.changeMode(AdvanceBuffer.MODE_TYPE.POINT)
 <script setup>
 import { onBeforeUnmount } from 'vue'
 import MapView from '/components/map-view.vue'
-import { AdvanceBuffer } from 'mapbox-utils'
+import { AdvanceBuffer } from 'mapbox-postting'
 import { ElMessage } from 'element-plus'
 import 'element-plus/dist/index.css'
 let map

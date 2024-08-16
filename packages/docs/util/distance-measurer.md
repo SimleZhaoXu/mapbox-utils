@@ -6,7 +6,7 @@
 
 ```js{2,4}
 // 1. 导入
-import { DistanceMeasurer } from 'mapbox-utils'
+import { DistanceMeasurer } from 'mapbox-postting'
 // 2. 创建DistanceMeasurer实例
 const distanceMeasurer = new DistanceMeasurer(options)
 // 3. 添加到地图
@@ -32,7 +32,7 @@ layers 中包含四种图层配置，测量过程中的点、线；测量完成�
 [
   {
     // 测量完成后的线
-    id: "mapbox-utils-distance-measure-line-inactive",
+    id: "mapbox-postting-distance-measure-line-inactive",
     type: "line",
     filter: ["all", ["==", "active", "false"], ["==", "$type", "LineString"]],
     paint: {
@@ -43,7 +43,7 @@ layers 中包含四种图层配置，测量过程中的点、线；测量完成�
   },
   {
     // 测量完成后的点
-    id: "mapbox-utils-distance-measure-vertex-inactive",
+    id: "mapbox-postting-distance-measure-vertex-inactive",
     type: "circle",
     filter: ["all", ["==", "active", "false"], ["==", "$type", "Point"]],
     paint: {
@@ -55,7 +55,7 @@ layers 中包含四种图层配置，测量过程中的点、线；测量完成�
   },
   {
     // 测量过程中的线
-    id: "mapbox-utils-distance-measure-line-active",
+    id: "mapbox-postting-distance-measure-line-active",
     type: "line",
     filter: ["all", ["==", "active", "true"], ["==", "$type", "LineString"]],
     paint: {
@@ -66,7 +66,7 @@ layers 中包含四种图层配置，测量过程中的点、线；测量完成�
   },
   {
     // 测量过程中的点
-    id: "mapbox-utils-distance-measure-vertex-active",
+    id: "mapbox-postting-distance-measure-vertex-active",
     type: "circle",
     filter: ["all", ["==", "active", "true"], ["==", "$type", "Point"]],
     paint: {
@@ -282,7 +282,7 @@ layers 中包含四种图层配置，测量过程中的点、线；测量完成�
 <script setup>
 import { onBeforeUnmount } from 'vue'
 import MapView from '/components/map-view.vue'
-import { DistanceMeasurer } from 'mapbox-utils'
+import { DistanceMeasurer } from 'mapbox-postting'
 import { ElMessage } from 'element-plus'
 import 'element-plus/dist/index.css'
 let map

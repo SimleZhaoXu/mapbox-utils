@@ -6,7 +6,7 @@
 
 ```js{2,4}
 // 1. 导入
-import { RectAreaPicker } from 'mapbox-utils'
+import { RectAreaPicker } from 'mapbox-postting'
 // 2. 创建RectAreaPicker实例
 const rectAreaPicker = new RectAreaPicker(options)
 // 3. 添加到地图
@@ -163,7 +163,7 @@ rectAreaPicker.addTo(map) // map为MapBox地图实例
 <script setup>
 import { onBeforeUnmount, createApp } from 'vue'
 import MapView from '/components/map-view.vue'
-import { RectAreaPicker } from 'mapbox-utils'
+import { RectAreaPicker } from 'mapbox-postting'
 import { ElMessage } from 'element-plus'
 import 'element-plus/dist/index.css'
 let map

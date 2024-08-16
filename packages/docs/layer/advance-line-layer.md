@@ -10,7 +10,7 @@
 
 ```js{2,4}
 // 1. 导入
-import { AdvanceLineLayer } from 'mapbox-utils'
+import { AdvanceLineLayer } from 'mapbox-postting'
 // 2. 创建LineLayer实例
 const lineLayer = new AdvanceLineLayer(options)
 // 3. 添加到地图
@@ -364,7 +364,7 @@ type LayerPool = {
 <script setup>
 import { onBeforeUnmount } from 'vue'
 import MapView from '/components/map-view.vue'
-import { AdvanceLineLayer } from 'mapbox-utils'
+import { AdvanceLineLayer } from 'mapbox-postting'
 import * as turf from '@turf/turf'
 import data from '/data/lineData.json'
 let map

@@ -12,17 +12,17 @@ export default defineConfig({
   external: Object.keys(pkg.dependencies),
   output: [
     {
-      file: 'dist/mapbox-postting.cjs.js',
+      file: 'dist/mapbox-utils.cjs.js',
       format: 'cjs',
       sourcemap: true
     },
     {
-      file: 'dist/mapbox-postting.esm.js',
+      file: 'dist/mapbox-utils.esm.js',
       format: 'es',
       sourcemap: true
     },
     {
-      file: 'dist/mapbox-postting.min.js',
+      file: 'dist/mapbox-utils.min.js',
       name: 'MapBoxCpn',
       format: 'umd',
       sourcemap: true,

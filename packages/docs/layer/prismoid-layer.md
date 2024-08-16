@@ -6,7 +6,7 @@
 
 ```js{2,4}
 // 1. 导入
-import { PrismoidLayer } from 'mapbox-utils'
+import { PrismoidLayer } from 'mapbox-postting'
 // 2. 创建PrismoidLayer实例
 const prismoidLayer = new PrismoidLayer(options)
 // 3. 添加到地图
@@ -350,7 +350,7 @@ prismoidLayer.addTo(map) // map为MapBox地图实例
 <script setup>
 import { onBeforeUnmount } from 'vue'
 import MapView from '/components/map-view.vue'
-import { PrismoidLayer } from 'mapbox-utils'
+import { PrismoidLayer } from 'mapbox-postting'
 import { points } from '../assets/data'
 import * as turf from '@turf/turf'
 let map

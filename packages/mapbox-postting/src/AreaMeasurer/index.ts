@@ -32,7 +32,7 @@ type Options = {
 export default class AreaMeasurer extends mapboxgl.Evented {
   private _map: mapboxgl.Map | null
   private _enabled: boolean
-  private _source = 'mapbox-postting-area-measurer-source'
+  private _source = 'mapbox-utils-area-measurer-source'
   private _cacheMap: Map<string, Cache>
   private _current: {
     path: Array<Coordinates>
@@ -71,7 +71,7 @@ export default class AreaMeasurer extends mapboxgl.Evented {
     if (this._map) {
       this._handleEventListener('off')
       this._removeSourceAndLayer()
-      this._map.getContainer().classList.remove('mapbox-postting-area-measurer-cursor')
+      this._map.getContainer().classList.remove('mapbox-utils-area-measurer-cursor')
     }
     this._map = null
     this._enabled = false
@@ -81,7 +81,7 @@ export default class AreaMeasurer extends mapboxgl.Evented {
   enable() {
     if (this._map) {
       this._enabled = true
-      this._map.getContainer().classList.add('mapbox-postting-area-measurer-cursor')
+      this._map.getContainer().classList.add('mapbox-utils-area-measurer-cursor')
     }
   }
 
@@ -96,7 +96,7 @@ export default class AreaMeasurer extends mapboxgl.Evented {
     }
     this._enabled = false
     if (this._map) {
-      this._map.getContainer().classList.remove('mapbox-postting-area-measurer-cursor')
+      this._map.getContainer().classList.remove('mapbox-utils-area-measurer-cursor')
       this._render()
     }
   }
@@ -363,7 +363,7 @@ function addRemoveBtn(marker: mapboxgl.Marker, removeCallBack?: () => void) {
 
 function createMarker(lngLat: [number, number], text: string) {
   const markerElem = document.createElement('div')
-  markerElem.classList.add('mapbox-postting-area-measurer-marker')
+  markerElem.classList.add('mapbox-utils-area-measurer-marker')
   const marker = new mapboxgl.Marker({
     element: markerElem,
     anchor: 'bottom',

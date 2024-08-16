@@ -2,8 +2,8 @@ import { Store, File } from './store'
 import {
   SFCDescriptor,
   BindingMetadata,
-  // shouldTransformRef,
-  // transformRef,
+  shouldTransformRef,
+  transformRef,
   CompilerOptions
 } from 'vue/compiler-sfc'
 import { transform } from 'sucrase'
@@ -31,9 +31,9 @@ export async function compileFile(store: Store, { filename, code, compiled }: Fi
   }
 
   if (filename.endsWith('.js') || filename.endsWith('.ts')) {
-    // if (shouldTransformRef(code)) {
-    //   code = transformRef(code, { filename }).code
-    // }
+    if (shouldTransformRef(code)) {
+      code = transformRef(code, { filename }).code
+    }
     if (filename.endsWith('.ts')) {
       code = await transformTS(code)
     }

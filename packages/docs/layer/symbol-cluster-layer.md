@@ -10,7 +10,7 @@
 
 ```js{2,4}
 // 1. 导入
-import { SymbolClusterLayer } from 'mapbox-utils'
+import { SymbolClusterLayer } from 'mapbox-postting'
 // 2. 创建SymbolClusterLayer实例
 const pointLayer = new SymbolClusterLayer(options)
 // 3. 添加到地图
@@ -362,7 +362,7 @@ pointLayer.addTo(map) // map为MapBox地图实例
 import { onBeforeUnmount } from 'vue'
 import iconList from '/assets/map-icon/index'
 import MapView from '/components/map-view.vue'
-import { SymbolClusterLayer } from 'mapbox-utils'
+import { SymbolClusterLayer } from 'mapbox-postting'
 import data from '/data/clusterData.json'
 import * as turf from '@turf/turf'
 let map

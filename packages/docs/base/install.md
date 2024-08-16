@@ -2,10 +2,10 @@
 
 ## 安装
 
-使用npm进行安装，目前只部署在公司内部npm上，安装时需指定npm镜像为 http://npm.cestc.cn
+使用npm进行安装
 
 ```
-npm install mapbox-utils --save --registry=http://npm.cestc.cn
+npm install mapbox-postting --save
 ```
 
 ## 使用
@@ -13,6 +13,6 @@ npm install mapbox-utils --save --registry=http://npm.cestc.cn
 按需导入进行使用
 
 ```js
-import 'mapbox-utils/dist/index.css' // 导入css样式
-import { CirclePointLayer } from 'mapbox-utils'
+import 'mapbox-postting/dist/index.css' // 导入css样式
+import { CirclePointLayer } from 'mapbox-postting'
 ```

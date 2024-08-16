@@ -1,7 +1,7 @@
-.mapboxgl-map.mapbox-postting-distance-measurer-cursor .mapboxgl-canvas-container {
+.mapboxgl-map.mapbox-utils-distance-measurer-cursor .mapboxgl-canvas-container {
   cursor: crosshair !important;
 }
-.mapbox-postting-distance-measurer-marker.mapboxgl-marker {
+.mapbox-utils-distance-measurer-marker.mapboxgl-marker {
   padding: 0;
   height: 28px;
   line-height: 28px;
@@ -13,7 +13,7 @@
   font-size: 14px;
 }
 
-.mapbox-postting-distance-measurer-marker.mapboxgl-marker .remove-btn {
+.mapbox-utils-distance-measurer-marker.mapboxgl-marker .remove-btn {
   display: inline-block;
   background-repeat: no-repeat;
   vertical-align: -2px;

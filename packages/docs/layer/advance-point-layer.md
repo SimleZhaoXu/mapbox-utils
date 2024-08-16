@@ -10,7 +10,7 @@
 
 ```js{2,4}
 // 1. 导入
-import { AdvancePointLayer } from 'mapbox-utils'
+import { AdvancePointLayer } from 'mapbox-postting'
 // 2. 创建AdvancePointLayer实例
 const pointLayer = new AdvancePointLayer(options)
 // 3. 添加到地图
@@ -369,7 +369,7 @@ type LayerPool = {
 <script setup>
 import { onBeforeUnmount } from 'vue'
 import MapView from '/components/map-view.vue'
-import { AdvancePointLayer } from 'mapbox-utils'
+import { AdvancePointLayer } from 'mapbox-postting'
 import { points } from '../assets/data'
 import * as turf from '@turf/turf'
 let map

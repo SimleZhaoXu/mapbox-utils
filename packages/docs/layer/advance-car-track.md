@@ -10,7 +10,7 @@
 
 ```js{2,4}
 // 1. 导入
-import { AdvanceCarTrack } from 'mapbox-utils'
+import { AdvanceCarTrack } from 'mapbox-postting'
 // 2. 创建AdvanceCarTrack实例
 const carTrack = new AdvanceCarTrack(options)
 // 3. 添加到地图
@@ -304,7 +304,7 @@ type LayerPool = {
 <script setup>
 import { onBeforeUnmount } from 'vue'
 import MapView from '/components/map-view.vue'
-import { AdvanceCarTrack } from 'mapbox-utils'
+import { AdvanceCarTrack } from 'mapbox-postting'
 import data from '/data/trackData1.json'
 let map
 let track

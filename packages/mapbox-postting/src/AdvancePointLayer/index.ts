@@ -442,15 +442,15 @@ export default class AdvancePointLayer extends mapboxgl.Evented {
   private _addCursor() {
     if (
       this._map &&
-      !this._map.getContainer().classList.contains('mapbox-postting-advance-point-layer')
+      !this._map.getContainer().classList.contains('mapbox-utils-advance-point-layer')
     ) {
-      this._map.getContainer().classList.add('mapbox-postting-advance-point-layer')
+      this._map.getContainer().classList.add('mapbox-utils-advance-point-layer')
     }
   }
 
   private _removeCursor() {
     if (this._map) {
-      this._map.getContainer().classList.remove('mapbox-postting-advance-point-layer')
+      this._map.getContainer().classList.remove('mapbox-utils-advance-point-layer')
     }
   }
 

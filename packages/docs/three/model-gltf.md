@@ -46,7 +46,7 @@ onMounted(() => {
       objects: [],
       onAdd() {
         window.tb.loadObj({
-          obj: window.origin + '/mapbox-utils-docs/models/windmill_a/windmill_a.gltf',
+          obj: window.origin + '/mapbox-postting-docs/models/windmill_a/windmill_a.gltf',
           type: 'gltf',
           scale: 0.01,
           units: 'meters',

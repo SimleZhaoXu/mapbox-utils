@@ -10,7 +10,7 @@
 
 ```js{2,4}
 // 1. 导入
-import { LineLayer } from 'mapbox-utils'
+import { LineLayer } from 'mapbox-postting'
 // 2. 创建LineLayer实例
 const lineLayer = new LineLayer(options)
 // 3. 添加到地图
@@ -382,7 +382,7 @@ lineLayer.addTo(map) // map为MapBox地图实例
 <script setup>
 import { onBeforeUnmount } from 'vue'
 import MapView from '/components/map-view.vue'
-import { LineLayer } from 'mapbox-utils'
+import { LineLayer } from 'mapbox-postting'
 import data from '/data/lineData.json'
 let map
 let lineLayer

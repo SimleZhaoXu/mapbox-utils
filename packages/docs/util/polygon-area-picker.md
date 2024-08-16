@@ -6,7 +6,7 @@
 
 ```js{2,4}
 // 1. 导入
-import { PolygonAreaPicker } from 'mapbox-utils'
+import { PolygonAreaPicker } from 'mapbox-postting'
 // 2. 创建PolygonAreaPicker实例
 const polygonAreaPicker = new PolygonAreaPicker(options)
 // 3. 添加到地图
@@ -165,7 +165,7 @@ polygonAreaPicker.addTo(map) // map为MapBox地图实例
 <script setup>
 import { onBeforeUnmount, createApp } from 'vue'
 import MapView from '/components/map-view.vue'
-import { PolygonAreaPicker } from 'mapbox-utils'
+import { PolygonAreaPicker } from 'mapbox-postting'
 import { ElMessage } from 'element-plus'
 import 'element-plus/dist/index.css'
 let map

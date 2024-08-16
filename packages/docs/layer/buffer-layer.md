@@ -6,7 +6,7 @@
 
 ```js{2,4}
 // 1. 导入
-import { BufferLayer } from 'mapbox-utils'
+import { BufferLayer } from 'mapbox-postting'
 // 2. 创建BufferLayer实例
 const bufferLayer = new BufferLayer(options)
 // 2. 添加到地图
@@ -210,7 +210,7 @@ bufferLayer.addTo(map) // map为MapBox地图实例
 <script setup>
 import { onBeforeUnmount } from 'vue'
 import MapView from '/components/map-view.vue'
-import { BufferLayer } from 'mapbox-utils'
+import { BufferLayer } from 'mapbox-postting'
 let map
 let bufferLayer
 const handleMapLoad = (val) => {

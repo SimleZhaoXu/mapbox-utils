@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: mapbox-utils
+  name: mapbox-postting
   text: 
   tagline: 基于mapboxgl的地图组件
   actions:

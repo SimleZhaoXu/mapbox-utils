@@ -10,7 +10,7 @@
 
 ```js{2,4}
 // 1. 导入
-import { SymbolPointLayer } from 'mapbox-utils'
+import { SymbolPointLayer } from 'mapbox-postting'
 // 2. 创建SymbolPointLayer实例
 const pointLayer = new SymbolPointLayer(options)
 // 3. 添加到地图
@@ -352,7 +352,7 @@ pointLayer.addTo(map) // map为MapBox地图实例
 import { onBeforeUnmount } from 'vue'
 import iconList from '/assets/map-icon/index'
 import MapView from '/components/map-view.vue'
-import { SymbolPointLayer } from 'mapbox-utils'
+import { SymbolPointLayer } from 'mapbox-postting'
 import { points } from '/assets/data'
 import * as turf from '@turf/turf'
 let map

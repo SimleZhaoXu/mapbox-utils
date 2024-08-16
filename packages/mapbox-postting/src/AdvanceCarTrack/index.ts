@@ -93,7 +93,7 @@ export default class AdvanceCarTrack extends mapboxgl.Evented {
     this._map = null
     this._finished = false
     this._loop = options.loop || false
-    this._source = `mapbox-postting-car-track-${nanoid(8)}`
+    this._source = `mapbox-utils-car-track-${nanoid(8)}`
     this._fitBoundsOptions = this._getFitBoundsOptions(options.fitBoundsOptions)
     this._lngLatBounds = null
     this._calcFullPath()

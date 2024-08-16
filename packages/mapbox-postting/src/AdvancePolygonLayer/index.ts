@@ -412,15 +412,15 @@ export default class AdvancePolygonLayer extends mapboxgl.Evented {
   private _addCursor() {
     if (
       this._map &&
-      !this._map.getContainer().classList.contains('mapbox-postting-advance-polygon-layer')
+      !this._map.getContainer().classList.contains('mapbox-utils-advance-polygon-layer')
     ) {
-      this._map.getContainer().classList.add('mapbox-postting-advance-polygon-layer')
+      this._map.getContainer().classList.add('mapbox-utils-advance-polygon-layer')
     }
   }
 
   private _removeCursor() {
     if (this._map) {
-      this._map.getContainer().classList.remove('mapbox-postting-advance-polygon-layer')
+      this._map.getContainer().classList.remove('mapbox-utils-advance-polygon-layer')
     }
   }
 

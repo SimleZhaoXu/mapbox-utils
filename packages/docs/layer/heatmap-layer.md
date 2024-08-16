@@ -6,7 +6,7 @@
 
 ```js{2,4}
 // 1. 导入
-import { HeatmapLayer } from 'mapbox-utils'
+import { HeatmapLayer } from 'mapbox-postting'
 // 2. 创建HeatmapLayer实例
 const heatmapLayer = new HeatmapLayer(options)
 // 3. 添加到地图
@@ -120,7 +120,7 @@ heatmapLayer.addTo(map) // map为MapBox地图实例
 <script setup>
 import { onBeforeUnmount } from 'vue'
 import MapView from '/components/map-view.vue'
-import { HeatmapLayer } from 'mapbox-utils'
+import { HeatmapLayer } from 'mapbox-postting'
 import data from '/data/heatmapData.json'
 let map
 let heatmapLayer

@@ -46,7 +46,7 @@ onMounted(() => {
       objects: [],
       onAdd() {
         window.tb.loadObj({
-          obj: window.origin + '/mapbox-utils-docs/models/eiffel.glb',
+          obj: window.origin + '/mapbox-postting-docs/models/eiffel.glb',
           type: 'gltf',
           scale: { x: 5621.06, y: 6480.4, z: 5621.06 },
           units: 'meters',

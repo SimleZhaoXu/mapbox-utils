@@ -6,7 +6,7 @@
 
 ```js{2,4}
 // 1. 导入
-import { MarkerPointLayer } from 'mapbox-utils'
+import { MarkerPointLayer } from 'mapbox-postting'
 // 2. 创建MarkerPointLayer实例
 const pointLayer = new MarkerPointLayer(options)
 // 3. 添加到地图
@@ -224,7 +224,7 @@ pointLayer.addTo(map) // map为MapBox地图实例
 <script setup>
 import { onBeforeUnmount, createApp } from 'vue'
 import MapView from '/components/map-view.vue'
-import { MarkerPointLayer } from 'mapbox-utils'
+import { MarkerPointLayer } from 'mapbox-postting'
 import { points } from '/assets/data'
 import * as turf from '@turf/turf'
 import CustomMarker from '/components/custom-marker.vue'

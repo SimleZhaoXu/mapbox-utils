@@ -6,7 +6,7 @@ export type LayerType =
 const layers: Array<LayerType> = [
   // 多边形填充
   {
-    id: 'mapbox-postting-draw-util-fill-inactive',
+    id: 'mapbox-utils-draw-util-fill-inactive',
     type: 'fill',
     filter: ['all', ['==', 'active', 'false'], ['==', '$type', 'Polygon']],
     paint: {
@@ -16,7 +16,7 @@ const layers: Array<LayerType> = [
   },
   // 多边形描边
   {
-    id: 'mapbox-postting-draw-util-border-inactive',
+    id: 'mapbox-utils-draw-util-border-inactive',
     type: 'line',
     filter: [
       'all',
@@ -32,7 +32,7 @@ const layers: Array<LayerType> = [
   },
   // 线
   {
-    id: 'mapbox-postting-draw-util-line-inactive',
+    id: 'mapbox-utils-draw-util-line-inactive',
     type: 'line',
     filter: [
       'all',
@@ -48,7 +48,7 @@ const layers: Array<LayerType> = [
   },
   // 点
   {
-    id: 'mapbox-postting-draw-util-point-active',
+    id: 'mapbox-utils-draw-util-point-active',
     type: 'circle',
     filter: ['all', ['==', 'origin', 'point'], ['==', '$type', 'Point']],
     paint: {
@@ -60,7 +60,7 @@ const layers: Array<LayerType> = [
   },
   // 多边形填充
   {
-    id: 'mapbox-postting-draw-util-fill-active',
+    id: 'mapbox-utils-draw-util-fill-active',
     type: 'fill',
     filter: ['all', ['==', 'active', 'true'], ['==', '$type', 'Polygon']],
     paint: {
@@ -69,7 +69,7 @@ const layers: Array<LayerType> = [
     }
   },
   {
-    id: 'mapbox-postting-draw-util-border-active',
+    id: 'mapbox-utils-draw-util-border-active',
     type: 'line',
     filter: [
       'all',
@@ -84,7 +84,7 @@ const layers: Array<LayerType> = [
     }
   },
   {
-    id: 'mapbox-postting-draw-util-line-active',
+    id: 'mapbox-utils-draw-util-line-active',
     type: 'line',
     filter: [
       'all',
@@ -99,7 +99,7 @@ const layers: Array<LayerType> = [
     }
   },
   {
-    id: 'mapbox-postting-draw-util-vertex-active',
+    id: 'mapbox-utils-draw-util-vertex-active',
     type: 'circle',
     filter: ['all', ['==', 'active', 'true'], ['==', '$type', 'Point'], ['==', 'type', 'vertex']],
     paint: {
@@ -111,7 +111,7 @@ const layers: Array<LayerType> = [
   },
   // 圆心
   {
-    id: 'mapbox-postting-draw-util-circle-center-active',
+    id: 'mapbox-utils-draw-util-circle-center-active',
     type: 'circle',
     filter: [
       'all',

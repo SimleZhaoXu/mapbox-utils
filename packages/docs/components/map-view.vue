@@ -6,7 +6,7 @@
 
 <script lang="ts" setup>
 import 'mapbox-gl/dist/mapbox-gl.css'
-import 'mapbox-utils/dist/index.css'
+import 'mapbox-postting/dist/index.css'
 import { onMounted, ref } from 'vue'
 import mapboxgl from 'mapbox-gl'
 import MapStyle from '../data/map_tian.json'

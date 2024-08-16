@@ -4,7 +4,7 @@ export type LayerType =
   | Omit<mapboxgl.LineLayer, OmitProperty>
 const layers: Array<LayerType> = [
   {
-    id: 'mapbox-postting-distance-measure-line-inactive',
+    id: 'mapbox-utils-distance-measure-line-inactive',
     type: 'line',
     filter: ['all', ['==', 'active', 'false'], ['==', '$type', 'LineString']],
     paint: {
@@ -14,7 +14,7 @@ const layers: Array<LayerType> = [
     }
   },
   {
-    id: 'mapbox-postting-distance-measure-vertex-inactive',
+    id: 'mapbox-utils-distance-measure-vertex-inactive',
     type: 'circle',
     filter: ['all', ['==', 'active', 'false'], ['==', '$type', 'Point']],
     paint: {
@@ -25,7 +25,7 @@ const layers: Array<LayerType> = [
     }
   },
   {
-    id: 'mapbox-postting-distance-measure-line-active',
+    id: 'mapbox-utils-distance-measure-line-active',
     type: 'line',
     filter: ['all', ['==', 'active', 'true'], ['==', '$type', 'LineString']],
     paint: {
@@ -35,7 +35,7 @@ const layers: Array<LayerType> = [
     }
   },
   {
-    id: 'mapbox-postting-distance-measure-vertex-active',
+    id: 'mapbox-utils-distance-measure-vertex-active',
     type: 'circle',
     filter: ['all', ['==', 'active', 'true'], ['==', '$type', 'Point']],
     paint: {

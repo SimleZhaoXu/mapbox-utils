@@ -6,7 +6,7 @@
 
 ```js{2,4}
 // 1. 导入
-import { AreaMeasurer } from 'mapbox-utils'
+import { AreaMeasurer } from 'mapbox-postting'
 // 2. 创建AreaMeasurer实例
 const areaMeasurer = new AreaMeasurer(options)
 // 3. 添加到地图
@@ -32,7 +32,7 @@ layers 中包含四种图层配置，测量过程中的顶点、描边、填充�
 [
   {
     // 测量完成后的区域填充
-    id: 'mapbox-utils-area-measurer-fill-inactive',
+    id: 'mapbox-postting-area-measurer-fill-inactive',
     type: 'fill',
     filter: ['all', ['==', 'active', 'false'], ['==', '$type', 'Polygon']],
     paint: {
@@ -42,7 +42,7 @@ layers 中包含四种图层配置，测量过程中的顶点、描边、填充�
   },
   {
     // 测量完成后的区域描边
-    id: 'mapbox-utils-area-measurer-line-inactive',
+    id: 'mapbox-postting-area-measurer-line-inactive',
     type: 'line',
     filter: ['all', ['==', 'active', 'false'], ['==', '$type', 'LineString']],
     paint: {
@@ -53,7 +53,7 @@ layers 中包含四种图层配置，测量过程中的顶点、描边、填充�
   },
   {
     // 测量完成后的区域顶点
-    id: 'mapbox-utils-area-measurer-vertex-inactive',
+    id: 'mapbox-postting-area-measurer-vertex-inactive',
     type: 'circle',
     filter: ['all', ['==', 'active', 'false'], ['==', '$type', 'Point']],
     paint: {
@@ -65,7 +65,7 @@ layers 中包含四种图层配置，测量过程中的顶点、描边、填充�
   },
   {
     // 测量过程中的区域填充
-    id: 'mapbox-utils-area-measurer-fill-active',
+    id: 'mapbox-postting-area-measurer-fill-active',
     type: 'fill',
     filter: ['all', ['==', 'active', 'true'], ['==', '$type', 'Polygon']],
     paint: {
@@ -75,7 +75,7 @@ layers 中包含四种图层配置，测量过程中的顶点、描边、填充�
   },
   {
     // 测量过程中的区域描边
-    id: 'mapbox-utils-area-measurer-line-active',
+    id: 'mapbox-postting-area-measurer-line-active',
     type: 'line',
     filter: ['all', ['==', 'active', 'true'], ['==', '$type', 'LineString']],
     paint: {
@@ -86,7 +86,7 @@ layers 中包含四种图层配置，测量过程中的顶点、描边、填充�
   },
   {
     // 测量过程中的区域顶点
-    id: 'mapbox-utils-area-measurer-vertex-active',
+    id: 'mapbox-postting-area-measurer-vertex-active',
     type: 'circle',
     filter: ['all', ['==', 'active', 'true'], ['==', '$type', 'Point']],
     paint: {
@@ -302,7 +302,7 @@ layers 中包含四种图层配置，测量过程中的顶点、描边、填充�
 <script setup>
 import { onBeforeUnmount } from 'vue'
 import MapView from '/components/map-view.vue'
-import { AreaMeasurer } from 'mapbox-utils'
+import { AreaMeasurer } from 'mapbox-postting'
 import { ElMessage } from 'element-plus'
 import 'element-plus/dist/index.css'
 let map

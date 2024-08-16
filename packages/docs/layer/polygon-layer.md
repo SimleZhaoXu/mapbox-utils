@@ -10,7 +10,7 @@
 
 ```js{2,4}
 // 1. 导入
-import { PolygonLayer } from 'mapbox-utils'
+import { PolygonLayer } from 'mapbox-postting'
 // 2. 创建PolygonLayer实例
 const polygonLayer = new PolygonLayer(options)
 // 3. 添加到地图
@@ -386,7 +386,7 @@ polygonLayer.addTo(map) // map为MapBox地图实例
 <script setup>
 import { onBeforeUnmount } from 'vue'
 import MapView from '/components/map-view.vue'
-import { PolygonLayer } from 'mapbox-utils'
+import { PolygonLayer } from 'mapbox-postting'
 import data from '/data/polygonData.json'
 let map
 let polygonLayer

@@ -6,7 +6,7 @@
 
 ```js{2,4}
 // 1. 导入
-import { DrawUtil } from 'mapbox-utils'
+import { DrawUtil } from 'mapbox-postting'
 // 2. 创建DrawUtil实例
 const drawUtil = new DrawUtil(options)
 // 3. 添加到地图
@@ -31,7 +31,7 @@ drawUtil.changeMode(DrawUtil.MODE_TYPE.DRAW_POLYGON)
 [
   // 多边形填充
   {
-    id: "mapbox-utils-draw-util-fill-inactive",
+    id: "mapbox-postting-draw-util-fill-inactive",
     type: "fill",
     filter: ["all", ["==", "active", "false"], ["==", "$type", "Polygon"]],
     paint: {
@@ -41,7 +41,7 @@ drawUtil.changeMode(DrawUtil.MODE_TYPE.DRAW_POLYGON)
   },
   // 多边形描边
   {
-    id: "mapbox-utils-draw-util-border-inactive",
+    id: "mapbox-postting-draw-util-border-inactive",
     type: "line",
     filter: [
       "all",
@@ -57,7 +57,7 @@ drawUtil.changeMode(DrawUtil.MODE_TYPE.DRAW_POLYGON)
   },
   // 线
   {
-    id: "mapbox-utils-draw-util-line-inactive",
+    id: "mapbox-postting-draw-util-line-inactive",
     type: "line",
     filter: [
       "all",
@@ -73,7 +73,7 @@ drawUtil.changeMode(DrawUtil.MODE_TYPE.DRAW_POLYGON)
   },
   // 点
   {
-    id: "mapbox-utils-draw-util-point-active",
+    id: "mapbox-postting-draw-util-point-active",
     type: "circle",
     filter: ["all", ["==", "type", "point"], ["==", "$type", "Point"]],
     paint: {
@@ -85,7 +85,7 @@ drawUtil.changeMode(DrawUtil.MODE_TYPE.DRAW_POLYGON)
   },
   // 绘制中多边形填充
   {
-    id: "mapbox-utils-draw-util-fill-active",
+    id: "mapbox-postting-draw-util-fill-active",
     type: "fill",
     filter: ["all", ["==", "active", "true"], ["==", "$type", "Polygon"]],
     paint: {
@@ -95,7 +95,7 @@ drawUtil.changeMode(DrawUtil.MODE_TYPE.DRAW_POLYGON)
   },
   // 绘制中多边形描边
   {
-    id: "mapbox-utils-draw-util-border-active",
+    id: "mapbox-postting-draw-util-border-active",
     type: "line",
     filter: [
       "all",
@@ -111,7 +111,7 @@ drawUtil.changeMode(DrawUtil.MODE_TYPE.DRAW_POLYGON)
   },
   // 绘制中线
   {
-    id: "mapbox-utils-draw-util-line-active",
+    id: "mapbox-postting-draw-util-line-active",
     type: "line",
     filter: [
       "all",
@@ -127,7 +127,7 @@ drawUtil.changeMode(DrawUtil.MODE_TYPE.DRAW_POLYGON)
   },
   // 绘制中顶点
   {
-    id: "mapbox-utils-draw-util-vertex-active",
+    id: "mapbox-postting-draw-util-vertex-active",
     type: "circle",
     filter: [
       "all",
@@ -144,7 +144,7 @@ drawUtil.changeMode(DrawUtil.MODE_TYPE.DRAW_POLYGON)
   },
   // 绘制中圆心
   {
-    id: "mapbox-utils-draw-util-circle-center-active",
+    id: "mapbox-postting-draw-util-circle-center-active",
     type: "circle",
     filter: [
       "all",
@@ -360,7 +360,7 @@ drawUtil.changeMode(DrawUtil.MODE_TYPE.DRAW_POLYGON)
 <script setup>
 import { onBeforeUnmount } from 'vue'
 import MapView from '/components/map-view.vue'
-import { DrawUtil } from 'mapbox-utils'
+import { DrawUtil } from 'mapbox-postting'
 import { ElMessage } from 'element-plus'
 import 'element-plus/dist/index.css'
 let map

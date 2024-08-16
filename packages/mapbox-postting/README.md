@@ -6,10 +6,10 @@
 
 ## 安装
 
-使用npm进行安装
+使用 npm 进行安装
 
 ```
-npm install mapbox-postting --save
+npm install mapbox-utils --save
 ```
 
 ## 使用
@@ -18,9 +18,11 @@ npm install mapbox-postting --save
 
 ```js
 import 'mapbox-postting/dist/index.css' // 导入css样式
-import { CirclePointLayer } from 'mapbox-postting'
+import { CirclePointLayer } from 'mapbox-utils'
 ```
 
 ## 文档及示例
 
 进入[gitee-源码](https://gitee.com/zX942698/mapbox-utils/tree/master)
+进入[文档](http://49.232.241.195:8580/mapbox-postting-docs/)
+进入[示例](http://49.232.241.195:8580/mapbox-postting-demos/#/circle-point)
